@@ -2,7 +2,7 @@ import http from 'node:http';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-const dir=path.join(path.dirname(fileURLToPath(import.meta.url)),'public');
+const dir=path.dirname(fileURLToPath(import.meta.url));
 const PORT=Number(process.env.PORT||3000);
 const KEY=process.env.HYPIXEL_API_KEY||'';
 const TTL=5*60*1000;
